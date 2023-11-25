@@ -62,7 +62,7 @@ public class DialogueTrigger : MonoBehaviour
                 {
                     afterDialogueChoice.Trigger();
                 }
-                else if(afterDialogueChangeSceneTo is not null)
+                else if (!string.IsNullOrWhiteSpace(afterDialogueChangeSceneTo))
                 {
                     SceneManager.LoadScene(afterDialogueChangeSceneTo);
                 }

@@ -37,8 +37,10 @@ public class InventoryManager : MonoBehaviour
         {
             GameObject obj = Instantiate(InventoryItem, ItemContent);
             var itemIcon = obj.transform.GetComponent<Image>();
+            var itemDesc = obj.transform.GetChild(0).GetComponent<DialogueTrigger>();
             itemIcon.sprite = item.icon;
             itemIcon.preserveAspect = true;
+            itemDesc.dialogue.conversation[0].dialogue = item.itemDesc;
         }
     }
 }
