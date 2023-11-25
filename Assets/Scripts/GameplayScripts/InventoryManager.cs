@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Linq;
 
 public class InventoryManager : MonoBehaviour
 {
@@ -19,11 +20,13 @@ public class InventoryManager : MonoBehaviour
     public void Add(Item item)
     {
         Items.Add(item);
+        ListItems();
     }
 
     public void Remove(Item item)
     {
         Items.Remove(item);
+        ListItems();
     }
 
     public void ListItems()
@@ -42,5 +45,15 @@ public class InventoryManager : MonoBehaviour
             itemIcon.preserveAspect = true;
             itemDesc.dialogue.conversation[0].dialogue = item.itemDesc;
         }
+    }
+
+    public bool PlayerHas(string nameToFind)
+    {
+        return Items.Any(i => i.itemName == nameToFind);
+    }
+
+    public Item GetItem(string nameToFind)
+    {
+        return Items.FirstOrDefault(i => i.itemName == nameToFind);
     }
 }

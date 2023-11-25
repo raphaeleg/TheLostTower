@@ -13,6 +13,10 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+        if (transform.position.x < -10 && horizontalMove < 0)
+        {
+            horizontalMove = 0f;
+        }
     }
 
     void FixedUpdate()
