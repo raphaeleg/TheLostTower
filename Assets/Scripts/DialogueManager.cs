@@ -7,6 +7,7 @@ using TMPro;
 public class DialogueManager : MonoBehaviour
 {
     public Dialogue currDialogue;
+    public bool dialogueEnded;
     private Queue<string> sentences;
 
     private Queue<DialogueStructure> currentConversation;
@@ -20,9 +21,9 @@ public class DialogueManager : MonoBehaviour
 
     void Start()
     {
-        //sentences = new Queue<string>();
         currentConversation = new Queue<DialogueStructure>();
         currDialogue = null;
+        dialogueEnded = false;
     }
 
     public void StartDialogue(Dialogue conversation)
@@ -47,9 +48,6 @@ public class DialogueManager : MonoBehaviour
         }
         DialogueStructure sentence = currentConversation.Dequeue();
 
-        //StopAllCoroutines();
-        //StartCoroutine(TypeSentence(sentence));
-
         spriteContainer.gameObject.SetActive(false);
         nameContainer.gameObject.SetActive(false);
 
@@ -67,21 +65,12 @@ public class DialogueManager : MonoBehaviour
         dialogueText.text = sentence.dialogue;
     }
 
-    //IEnumerator TypeSentence (string sentence)
-    //{
-    //    dialogueText.text = "";
-    //    foreach (char letter in sentence.ToCharArray())
-    //    {
-    //        dialogueText.text += letter;
-    //        yield return null;
-    //    }
-    //}
-
     void EndDialogue()
     {
+        currDialogue = null;
+        dialogueEnded = true;
         spriteContainer.gameObject.SetActive(false);
         nameContainer.gameObject.SetActive(false);
         dialogueContainer.gameObject.SetActive(false);
-        //Destroy(currDialogue);
     }
 }

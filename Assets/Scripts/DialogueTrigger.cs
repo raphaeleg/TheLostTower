@@ -4,27 +4,69 @@ using UnityEngine;
 
 public class DialogueTrigger : MonoBehaviour
 {
+    public bool isTriggerable;
     public Dialogue dialogue;
+    public Choice afterDialogueChoice;
+    private DialogueManager dm;
 
-    public void Update()
+    public void Awake()
     {
-        if (Input.GetKeyDown("space"))
+        dm = FindObjectOfType<DialogueManager>();
+        if (!isTriggerable)
         {
-            TriggerDialogue();
-        }
-    }
-    public void TriggerDialogue()
-    {
-        DialogueManager dm = FindObjectOfType<DialogueManager>();
-        if (dm.currDialogue is not null)
-        {
-            Debug.Log("In");
-            dm.DisplayNextSentence();
+            gameObject.SetActive(false);
         }
         else
         {
-            Debug.Log("Start");
-            dm.StartDialogue(dialogue);
+            gameObject.SetActive(true);
         }
+    }
+
+    public void Update()
+    {
+        if (isTriggerable)
+        {
+            isTriggering();
+        }
+    }
+
+    public void setTrigger(bool toSet)
+    {
+        isTriggerable = toSet;
+        gameObject.SetActive(toSet);
+        if (toSet ) {
+            isTriggering();
+        }
+    }
+
+    public void isTriggering()
+    {
+        if (!isTriggerable)
+        {
+            return;
+        }
+
+        if (dm.currDialogue is null)
+        {
+            if (!dm.dialogueEnded)
+            {
+                dm.StartDialogue(dialogue);
+            }
+            else
+            {
+                if (afterDialogueChoice is not null)
+                {
+                    afterDialogueChoice.Trigger();
+                }
+                isTriggerable = false;
+                dm.dialogueEnded = false;
+            }
+
+        }
+        else if ((Input.GetMouseButtonDown(0)))
+        {
+            dm.DisplayNextSentence();
+        }
+        
     }
 }
