@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 156589592}
   - component: {fileID: 156589591}
   m_Layer: 0
-  m_Name: Choice
+  m_Name: PoisonChoice
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -151,9 +151,9 @@ MonoBehaviour:
   choiceContainer: {fileID: 800741086}
   choiceBtn: {fileID: 5510365268547713446, guid: d913e9bdec85cfb44a1c4cc748982a50, type: 3}
   choices:
-  - description: Kill cat
+  - description: Do nothing
     toTrigger: {fileID: 2051702844}
-  - description: no
+  - description: Poison your father
     toTrigger: {fileID: 2000640619}
 --- !u!4 &156589592
 Transform:
@@ -640,7 +640,7 @@ GameObject:
   - component: {fileID: 788935984}
   - component: {fileID: 788935983}
   m_Layer: 0
-  m_Name: Dialogue1
+  m_Name: BeginningDialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -663,16 +663,21 @@ MonoBehaviour:
     conversation:
     - sprite: {fileID: 0}
       name: Son
-      dialogue: Father
+      dialogue: Father, you disown me? Is this how you repay your own blood?
     - sprite: {fileID: 0}
-      name: Father
-      dialogue: yes?
+      name: Landlord
+      dialogue: You've brought shame to this family! I've had enough of your disobedience!
+        I won't allow it any longer.
     - sprite: {fileID: 0}
-      name: Servant
-      dialogue: ...
+      name: Son
+      dialogue: You may cast me out, but remember this moment. It won't end well
+        for you.
+    - sprite: {fileID: 0}
+      name: Landlord
+      dialogue: Leave, and don't ever return.
     - sprite: {fileID: 0}
       name: 
-      dialogue: ...
+      dialogue: You got a Poison
   afterDialogueChoice: {fileID: 156589591}
 --- !u!4 &788935984
 Transform:
@@ -1267,7 +1272,7 @@ GameObject:
   - component: {fileID: 2000640620}
   - component: {fileID: 2000640619}
   m_Layer: 0
-  m_Name: Choice2Dialogue
+  m_Name: PoisonFatherChoice
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1290,7 +1295,33 @@ MonoBehaviour:
     conversation:
     - sprite: {fileID: 0}
       name: 
-      dialogue: You starved and die
+      dialogue: You got a Testament
+    - sprite: {fileID: 0}
+      name: Son
+      dialogue: What's this? The power and treasure... all left to the servant? Unacceptable.
+    - sprite: {fileID: 0}
+      name: Son
+      dialogue: You think you can take what's rightfully mine? I won't let that happen.
+    - sprite: {fileID: 0}
+      name: Servant
+      dialogue: I don't know what you're talking about. The master decided this on
+        his own.
+    - sprite: {fileID: 0}
+      name: Son
+      dialogue: You should have stayed in your place!
+    - sprite: {fileID: 0}
+      name: 
+      dialogue: 'You kill the Servant by Knife and change your face to his. '
+    - sprite: {fileID: 0}
+      name: 
+      dialogue: "You got a simple Map from your father\u2019s relics and a Key "
+    - sprite: {fileID: 0}
+      name: Son
+      dialogue: "I\u2019m sure the destination is the tower. This could be the key
+        to reclaiming what's rightfully mine! The property, the family heirlooms!"
+    - sprite: {fileID: 0}
+      name: Son
+      dialogue: This is it. The tower holds the answers and the treasures I seek.
   afterDialogueChoice: {fileID: 0}
 --- !u!4 &2000640620
 Transform:
@@ -1318,7 +1349,7 @@ GameObject:
   - component: {fileID: 2051702845}
   - component: {fileID: 2051702844}
   m_Layer: 0
-  m_Name: Choice1Dialogue
+  m_Name: DoNothingChoice
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1341,7 +1372,7 @@ MonoBehaviour:
     conversation:
     - sprite: {fileID: 0}
       name: 
-      dialogue: You killed the cat
+      dialogue: You are exiled and starved to death
   afterDialogueChoice: {fileID: 0}
 --- !u!4 &2051702845
 Transform:
