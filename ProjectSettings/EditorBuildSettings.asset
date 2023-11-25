@@ -8,5 +8,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Beginning.unity
+    guid: f72b98ac6f1e92d488e8d7231161c5a9
+  - enabled: 1
+    path: Assets/Scenes/OutsideTower.unity
+    guid: 7b93b0526452ef34ebd190de1fa2134f
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

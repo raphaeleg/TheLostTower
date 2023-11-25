@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DialogueTrigger : MonoBehaviour
 {
     public bool isTriggerable;
     public Dialogue dialogue;
     public Choice afterDialogueChoice;
+    public string afterDialogueChangeSceneTo;
     private DialogueManager dm;
 
     public void Awake()
@@ -54,12 +56,17 @@ public class DialogueTrigger : MonoBehaviour
             }
             else
             {
+                isTriggerable = false;
+                dm.dialogueEnded = false;
                 if (afterDialogueChoice is not null)
                 {
                     afterDialogueChoice.Trigger();
                 }
-                isTriggerable = false;
-                dm.dialogueEnded = false;
+                else if(afterDialogueChangeSceneTo is not null)
+                {
+                    SceneManager.LoadScene(afterDialogueChangeSceneTo);
+                }
+                
             }
 
         }
