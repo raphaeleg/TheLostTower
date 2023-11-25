@@ -49,6 +49,7 @@ public class DialogueManager : MonoBehaviour
         DialogueStructure sentence = currentConversation.Dequeue();
 
         spriteContainer.gameObject.SetActive(false);
+        spriteContainer.color = Color.clear;
         nameContainer.gameObject.SetActive(false);
 
         if (!string.IsNullOrWhiteSpace(sentence.name))
@@ -56,9 +57,10 @@ public class DialogueManager : MonoBehaviour
             nameText.text = sentence.name;
             nameContainer.gameObject.SetActive(true);
         }
-        if (sentence.sprite is not null)
+        if (sentence.sprite != null )
         {
-            spriteContainer = sentence.sprite;
+            spriteContainer.sprite = sentence.sprite;
+            spriteContainer.color = Color.white;
             spriteContainer.gameObject.SetActive(true);
         }
 
@@ -70,6 +72,7 @@ public class DialogueManager : MonoBehaviour
         currDialogue = null;
         dialogueEnded = true;
         spriteContainer.gameObject.SetActive(false);
+        spriteContainer.color = Color.clear;
         nameContainer.gameObject.SetActive(false);
         dialogueContainer.gameObject.SetActive(false);
     }

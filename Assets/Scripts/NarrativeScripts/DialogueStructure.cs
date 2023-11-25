@@ -6,11 +6,11 @@ using UnityEngine.UI;
 [System.Serializable]
 public struct DialogueStructure
 {
-    public Image sprite;
+    public Sprite sprite;
     public string name;
     public string dialogue;
 
-    public DialogueStructure(Image sprite, string name, string dialogue)
+    public DialogueStructure(Sprite sprite, string name, string dialogue)
     {
         this.sprite = sprite;
         this.name = name;
