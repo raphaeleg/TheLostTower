@@ -9,8 +9,12 @@ public class GameManager : MonoBehaviour
     {
         Application.Quit();
     }
-    public void startGame()
+    public void StartGame()
     {
         SceneManager.LoadScene("Beginning");
+    }
+    public void GoToL1()
+    {
+        SceneManager.LoadScene("Floor1");
     }
 }
