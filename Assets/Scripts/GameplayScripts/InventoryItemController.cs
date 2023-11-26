@@ -7,7 +7,7 @@ using UnityEngine.EventSystems;
 
 public class InventoryItemController : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler
 {
-    //[SerializeField] private Canvas canvas;
+    [SerializeField] private Canvas canvas;
     private RectTransform rectTransform;
     private CanvasGroup canvasGroup;
     private Vector2 ogPosition;
@@ -30,7 +30,7 @@ public class InventoryItemController : MonoBehaviour, IDragHandler, IBeginDragHa
 
     public void OnDrag(PointerEventData eventData)
     {
-        rectTransform.anchoredPosition += eventData.delta;// canvas.scaleFactor;
+        rectTransform.anchoredPosition += eventData.delta/ canvas.scaleFactor;
     }
 
     public void OnEndDrag(PointerEventData eventData)

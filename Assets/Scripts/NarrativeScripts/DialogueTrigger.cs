@@ -70,7 +70,7 @@ public class DialogueTrigger : MonoBehaviour
             }
 
         }
-        else if ((Input.GetMouseButtonDown(0)))
+        else if ((Input.GetKeyDown(KeyCode.Space)))
         {
             dm.DisplayNextSentence();
         }
