@@ -13,11 +13,9 @@ public class DialogueManager : MonoBehaviour
     private Queue<DialogueStructure> currentConversation;
 
     // UI
-    public TMP_Text nameText;
     public TMP_Text dialogueText;
     public Image spriteContainer;
     public Image dialogueContainer;
-    public Image nameContainer;
 
     void Start()
     {
@@ -50,13 +48,7 @@ public class DialogueManager : MonoBehaviour
 
         spriteContainer.gameObject.SetActive(false);
         spriteContainer.color = Color.clear;
-        nameContainer.gameObject.SetActive(false);
 
-        if (!string.IsNullOrWhiteSpace(sentence.name))
-        {
-            nameText.text = sentence.name;
-            nameContainer.gameObject.SetActive(true);
-        }
         if (sentence.sprite != null )
         {
             spriteContainer.sprite = sentence.sprite;
@@ -73,7 +65,6 @@ public class DialogueManager : MonoBehaviour
         dialogueEnded = true;
         spriteContainer.gameObject.SetActive(false);
         spriteContainer.color = Color.clear;
-        nameContainer.gameObject.SetActive(false);
         dialogueContainer.gameObject.SetActive(false);
     }
 }
