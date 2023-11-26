@@ -17,4 +17,8 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene("Floor1");
     }
+    public void GoToL2()
+    {
+        SceneManager.LoadScene("Floor2");
+    }
 }

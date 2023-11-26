@@ -524,20 +524,26 @@ MonoBehaviour:
   isTriggerable: 1
   dialogue:
     conversation:
+    - sprite: {fileID: -1741085552946812590, guid: 7d69754a0bfa4c54b9fea5b45234168a, type: 3}
+      name: Father
+      dialogue: I can't go on like this. Your mother's death has torn us apart, and
+        you're only making it worse.
     - sprite: {fileID: 0}
       name: Son
-      dialogue: Father, you disown me? Is this how you repay your own blood?
+      dialogue: Worse? You think avoiding the truth is better? I know you had a hand
+        in her death!
     - sprite: {fileID: -1741085552946812590, guid: 7d69754a0bfa4c54b9fea5b45234168a, type: 3}
-      name: Landlord
-      dialogue: You've brought shame to this family! I've had enough of your disobedience!
-        I won't allow it any longer.
+      name: Father
+      dialogue: What nonsense is this? I loved your mother. Accusing me won't bring
+        her back.
     - sprite: {fileID: 0}
       name: Son
-      dialogue: You may cast me out, but remember this moment. It won't end well
-        for you.
+      dialogue: You loved her so much that you can't even look at me? The truth will
+        come out, and I'll make sure of it!
     - sprite: {fileID: -1741085552946812590, guid: 7d69754a0bfa4c54b9fea5b45234168a, type: 3}
-      name: Landlord
-      dialogue: Leave, and don't ever return.
+      name: 
+      dialogue: You're blinded by grief. I can't deal with this right now. Leave
+        me be!
     - sprite: {fileID: 0}
       name: 
       dialogue: You got a Poison
@@ -1234,30 +1240,36 @@ MonoBehaviour:
       dialogue: You got a Testament
     - sprite: {fileID: 0}
       name: Son
-      dialogue: What's this? The power and treasure... all left to the servant? Unacceptable.
+      dialogue: What's this? The power and treasure... half to the servant? Unacceptable.
     - sprite: {fileID: 0}
       name: Son
-      dialogue: You think you can take what's rightfully mine? I won't let that happen.
-    - sprite: {fileID: 0}
+      dialogue: I trusted you, but you were part of it, weren't you?
+    - sprite: {fileID: 237756825442971623, guid: a664595812eec6047968eff8ed8223e8, type: 3}
       name: Servant
-      dialogue: I don't know what you're talking about. The master decided this on
-        his own.
+      dialogue: '"I swear, I had no part in any harm. What are you talking about?'
     - sprite: {fileID: 0}
       name: Son
-      dialogue: You should have stayed in your place!
+      dialogue: "Don't play innocent with me! The relics, the testament\u2014your
+        lies end here!"
+    - sprite: {fileID: 237756825442971623, guid: a664595812eec6047968eff8ed8223e8, type: 3}
+      name: Servant
+      dialogue: Please, listen! I'm innocent. The master decided this on his own.
+    - sprite: {fileID: 0}
+      name: Son
+      dialogue: Enough! Your words won't save you now.
     - sprite: {fileID: 0}
       name: 
-      dialogue: 'You kill the Servant by Knife and change your face to his. '
+      dialogue: You kill the Servant by Knife.
     - sprite: {fileID: 0}
       name: 
-      dialogue: "You got a simple Map from your father\u2019s relics and a Key "
+      dialogue: "You got a simple Map from your father\u2019s relics and a Key."
     - sprite: {fileID: 0}
       name: Son
-      dialogue: "I\u2019m sure the destination is the tower. This could be the key
-        to reclaiming what's rightfully mine! The property, the family heirlooms!"
+      dialogue: "ahh, the secret treasure map? I\u2019m sure my father hid his tools
+        of crime there."
     - sprite: {fileID: 0}
       name: Son
-      dialogue: This is it. The tower holds the answers and the treasures I seek.
+      dialogue: This is it. The tower holds the answers I seek.
   afterDialogueChoice: {fileID: 0}
   afterDialogueChangeSceneTo: OutsideTower
 --- !u!4 &2000640620
@@ -1309,7 +1321,12 @@ MonoBehaviour:
     conversation:
     - sprite: {fileID: 0}
       name: 
-      dialogue: You are exiled and starved to death
+      dialogue: Your father thought you had been changed to another person instead
+        of his lovely son, so he kicked you out after the quarrel.
+    - sprite: {fileID: 0}
+      name: 
+      dialogue: Your family is so powerful that you can never go back to find the
+        truth.
   afterDialogueChoice: {fileID: 0}
   afterDialogueChangeSceneTo: MainMenu
 --- !u!4 &2051702845
