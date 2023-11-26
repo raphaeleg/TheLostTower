@@ -13,9 +13,8 @@ public class Interactable : MonoBehaviour
     {
         if (isInRange)
         {
-            if (Input.GetKeyDown(interactKey))
+            if (Input.GetKeyDown(interactKey) || interactKey == KeyCode.None)
             {
-                Debug.Log("Interacting");
                 interactAction.Invoke();
             }
         }
