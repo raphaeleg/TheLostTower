@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Hydrogen Peroxide
   icon: {fileID: -887327768880906463, guid: 936a06012a908b04592d15d1b4fe47fd, type: 3}
-  itemDesc: 
+  itemDesc: A bottle containing disgusting liquid which may lead a vomit.

@@ -209,7 +209,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4194412683950955469, guid: 1ac1bb05fbfebe845bade8ad0ef8f57b, type: 3}
       propertyPath: dialogue.conversation.Array.data[0].dialogue
-      value: Once filled with Poison
+      value: Empty poison bottle. You keep this as a memento of Revenge.
       objectReference: {fileID: 0}
     - target: {fileID: 8738597066164925682, guid: 1ac1bb05fbfebe845bade8ad0ef8f57b, type: 3}
       propertyPath: m_Sprite
@@ -874,7 +874,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4194412683950955469, guid: 1ac1bb05fbfebe845bade8ad0ef8f57b, type: 3}
       propertyPath: dialogue.conversation.Array.data[0].dialogue
-      value: The key looks rusted
+      value: A mysterious key. It can be used to unlock something.
       objectReference: {fileID: 0}
     - target: {fileID: 6236606384765427426, guid: 1ac1bb05fbfebe845bade8ad0ef8f57b, type: 3}
       propertyPath: ToSlotIn
@@ -1024,7 +1024,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4194412683950955469, guid: 1ac1bb05fbfebe845bade8ad0ef8f57b, type: 3}
       propertyPath: dialogue.conversation.Array.data[0].dialogue
-      value: It carved a face out!
+      value: A sharp and ominous knife. You keep this as a memento of Revenge.
       objectReference: {fileID: 0}
     - target: {fileID: 8738597066164925682, guid: 1ac1bb05fbfebe845bade8ad0ef8f57b, type: 3}
       propertyPath: m_Sprite

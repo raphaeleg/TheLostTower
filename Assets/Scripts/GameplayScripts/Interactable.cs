@@ -15,6 +15,7 @@ public class Interactable : MonoBehaviour
         {
             if (Input.GetKeyDown(interactKey))
             {
+                Debug.Log("Interacting");
                 interactAction.Invoke();
             }
         }

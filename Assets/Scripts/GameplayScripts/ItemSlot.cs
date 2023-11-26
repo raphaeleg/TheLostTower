@@ -13,6 +13,7 @@ public class ItemSlot : MonoBehaviour, IDropHandler
         {
             //eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
             InventoryItemController ic = eventData.pointerDrag.GetComponent<InventoryItemController>();
+            
             if (ic.getTargetInteractable() == gameObject)
             {
                 ic.getInteractAction().Invoke();
