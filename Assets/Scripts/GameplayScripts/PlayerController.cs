@@ -54,8 +54,7 @@ public class CharacterController2D : MonoBehaviour
     public void Move(float move)
     {
         //only control the player if grounded
-        if (m_Grounded)
-        {
+        
             // Move the character by finding the target velocity
             Vector3 targetVelocity = new Vector2(move * 10f, m_Rigidbody2D.velocity.y);
             // And then smoothing it out and applying it to the character
@@ -73,7 +72,7 @@ public class CharacterController2D : MonoBehaviour
                 // ... flip the player.
                 Flip();
             }
-        }
+        
     }
 
 
