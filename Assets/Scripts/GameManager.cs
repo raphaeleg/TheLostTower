@@ -29,4 +29,12 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene("Floor3");
     }
+    public void GoToL3Room()
+    {
+        SceneManager.LoadScene("Floor3Room");
+    }
+    public void EndGame()
+    {
+        SceneManager.LoadScene("Ending");
+    }
 }

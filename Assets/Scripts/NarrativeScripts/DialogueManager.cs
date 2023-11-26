@@ -46,6 +46,7 @@ public class DialogueManager : MonoBehaviour
         }
         DialogueStructure sentence = currentConversation.Dequeue();
 
+        dialogueContainer.gameObject.SetActive(false);
         spriteContainer.gameObject.SetActive(false);
         spriteContainer.color = Color.clear;
 
@@ -55,8 +56,12 @@ public class DialogueManager : MonoBehaviour
             spriteContainer.color = Color.white;
             spriteContainer.gameObject.SetActive(true);
         }
+        if (!string.IsNullOrWhiteSpace(sentence.dialogue))
+        {
+            dialogueContainer.gameObject.SetActive(true);
+            dialogueText.text = sentence.dialogue;
+        }
 
-        dialogueText.text = sentence.dialogue;
     }
 
     void EndDialogue()
