@@ -12,6 +12,7 @@ public class UI_InputWindow : MonoBehaviour
     public Button cancelBtn;
     public TMP_Text titleText;
     public TMP_InputField inputField;
+    public AudioClip successAudio;
 
 private void Awake()
     {
@@ -32,6 +33,10 @@ private void Awake()
             Debug.Log(code+" "+inputField.text);
             if (inputField.text == code) {
                 okAction.Invoke();
+                if (successAudio != null)
+                {
+                    SoundManager.Instance.PlaySound(successAudio);
+                }
                 Hide();
             }
             else

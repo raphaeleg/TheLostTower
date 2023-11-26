@@ -9,11 +9,13 @@ public struct DialogueStructure
     public Sprite sprite;
     public string name;
     public string dialogue;
+    public AudioClip soundEffect;
 
-    public DialogueStructure(Sprite sprite, string name, string dialogue)
+    public DialogueStructure(Sprite sprite, string name, string dialogue, AudioClip soundEffect)
     {
         this.sprite = sprite;
         this.name = name;
         this.dialogue = dialogue;
+        this.soundEffect = soundEffect;
     }
 }

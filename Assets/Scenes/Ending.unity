@@ -476,16 +476,20 @@ MonoBehaviour:
     - sprite: {fileID: 0}
       name: 
       dialogue: 
+      soundEffect: {fileID: 0}
     - sprite: {fileID: 0}
       name: Son
-      dialogue: What is this? So my father loves my mother and they are happy togather?
-        This can't be it!
+      dialogue: '"What is this? So my father loves my mother and they are happy togather?
+        This can''t be it!"'
+      soundEffect: {fileID: 0}
     - sprite: {fileID: 0}
       name: Son
-      dialogue: No, this can't be the Truth! I endured so much for this?
+      dialogue: '"No, this can''t be the Truth! I endured so much for this?"'
+      soundEffect: {fileID: 0}
     - sprite: {fileID: 0}
       name: Son
-      dialogue: Is this some kind of joke? I won't accept this!
+      dialogue: '"Is this some kind of joke? I won''t accept this!"'
+      soundEffect: {fileID: 0}
   afterDialogueChoice: {fileID: 0}
   afterDialogueChangeSceneTo: MainMenu
 --- !u!4 &788935984

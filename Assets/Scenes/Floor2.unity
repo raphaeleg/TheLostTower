@@ -2217,6 +2217,7 @@ MonoBehaviour:
   cancelBtn: {fileID: 215120967}
   titleText: {fileID: 1668290821}
   inputField: {fileID: 1956132494}
+  successAudio: {fileID: 8300000, guid: 76c129163afc957489bb0152891dfd95, type: 3}
 --- !u!114 &1281171671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4332,6 +4333,7 @@ MonoBehaviour:
     - sprite: {fileID: 0}
       name: 
       dialogue: The portrait of your mother, "From 1938 to 1971"
+      soundEffect: {fileID: 0}
   afterDialogueChoice: {fileID: 0}
   afterDialogueChangeSceneTo: 
 --- !u!1 &2138545894

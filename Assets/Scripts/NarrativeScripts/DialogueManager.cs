@@ -61,7 +61,10 @@ public class DialogueManager : MonoBehaviour
             dialogueContainer.gameObject.SetActive(true);
             dialogueText.text = sentence.dialogue;
         }
-
+        if (sentence.soundEffect != null)
+        {
+            SoundManager.Instance.PlaySound(sentence.soundEffect);
+        }
     }
 
     void EndDialogue()

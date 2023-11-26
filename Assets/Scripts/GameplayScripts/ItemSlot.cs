@@ -6,6 +6,8 @@ using UnityEngine.EventSystems;
 
 public class ItemSlot : MonoBehaviour, IDropHandler
 {
+    public AudioClip soundEffect;
+
     public void OnDrop(PointerEventData eventData)
     {
         Debug.Log("OnDrop");
@@ -16,6 +18,10 @@ public class ItemSlot : MonoBehaviour, IDropHandler
             
             if (ic.getTargetInteractable() == gameObject)
             {
+                if (soundEffect != null)
+                {
+                    SoundManager.Instance.PlaySound(soundEffect);
+                }
                 ic.getInteractAction().Invoke();
             }
         }
