@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
 public class DialogueTrigger : MonoBehaviour
@@ -9,6 +10,7 @@ public class DialogueTrigger : MonoBehaviour
     public Dialogue dialogue;
     public Choice afterDialogueChoice;
     public string afterDialogueChangeSceneTo;
+    public UnityEvent afterDialogueFunction;
     private DialogueManager dm;
 
     public void Awake()
@@ -65,6 +67,10 @@ public class DialogueTrigger : MonoBehaviour
                 else if (!string.IsNullOrWhiteSpace(afterDialogueChangeSceneTo))
                 {
                     SceneManager.LoadScene(afterDialogueChangeSceneTo);
+                }
+                else if (afterDialogueFunction is not null)
+                {
+                    afterDialogueFunction.Invoke();
                 }
                 
             }
