@@ -2009,10 +2009,17 @@ MonoBehaviour:
     conversation:
     - sprite: {fileID: 0}
       name: 
-      dialogue: The portrait of your mother, "From 1938 to 1971"
+      dialogue: The portrait of your mother
+      soundEffect: {fileID: 0}
+    - sprite: {fileID: 0}
+      name: 
+      dialogue: Sophia - Born 1938, Died 1971
       soundEffect: {fileID: 0}
   afterDialogueChoice: {fileID: 0}
   afterDialogueChangeSceneTo: 
+  afterDialogueFunction:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1087293004
 GameObject:
   m_ObjectHideFlags: 0

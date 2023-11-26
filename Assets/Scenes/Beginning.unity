@@ -151,7 +151,7 @@ MonoBehaviour:
   choiceContainer: {fileID: 800741086}
   choiceBtn: {fileID: 5510365268547713446, guid: d913e9bdec85cfb44a1c4cc748982a50, type: 3}
   choices:
-  - description: Do nothing
+  - description: Keep arguing with your Father
     toTrigger: {fileID: 2051702844}
   - description: Poison your father
     toTrigger: {fileID: 2000640619}
@@ -555,6 +555,9 @@ MonoBehaviour:
       soundEffect: {fileID: 0}
   afterDialogueChoice: {fileID: 156589591}
   afterDialogueChangeSceneTo: 
+  afterDialogueFunction:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &788935984
 Transform:
   m_ObjectHideFlags: 0
@@ -1595,6 +1598,9 @@ MonoBehaviour:
       soundEffect: {fileID: 0}
   afterDialogueChoice: {fileID: 0}
   afterDialogueChangeSceneTo: OutsideTower
+  afterDialogueFunction:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &2000640620
 Transform:
   m_ObjectHideFlags: 0
@@ -1654,6 +1660,9 @@ MonoBehaviour:
       soundEffect: {fileID: 0}
   afterDialogueChoice: {fileID: 0}
   afterDialogueChangeSceneTo: MainMenu
+  afterDialogueFunction:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &2051702845
 Transform:
   m_ObjectHideFlags: 0
