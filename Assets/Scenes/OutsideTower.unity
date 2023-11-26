@@ -291,8 +291,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
+  m_Sprite: {fileID: 7212026030364315664, guid: a6b61f97ece949840bced89bf1aee490, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -683,6 +683,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 0a9a73a36993aa646bb87e0fcccb1fa1, type: 2}
   ItemContent: {fileID: 1562726673}
   InventoryItem: {fileID: 9212557071121386656, guid: 1ac1bb05fbfebe845bade8ad0ef8f57b, type: 3}
+  toReference: {fileID: 0}
+  toDo:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &562477092
 Transform:
   m_ObjectHideFlags: 0
@@ -1195,7 +1199,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1548,8 +1552,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
+  m_Sprite: {fileID: 3213787158223004729, guid: 19f808048388c434eb9e2a72c5daba5e, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
