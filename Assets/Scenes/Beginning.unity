@@ -545,8 +545,8 @@ MonoBehaviour:
       soundEffect: {fileID: 0}
     - sprite: {fileID: 1291748198613406465, guid: c8d29ba3d927dfb46bf113bfcfb38621, type: 3}
       name: Son
-      dialogue: '"Worse? You think avoiding the truth is better? I know you had a
-        hand in her death!"'
+      dialogue: '"Worse? You''re the one who profited from her death. NEW landlord!
+        I know you had a hand in her death!"'
       soundEffect: {fileID: 0}
     - sprite: {fileID: -1741085552946812590, guid: 7d69754a0bfa4c54b9fea5b45234168a, type: 3}
       name: Father
@@ -1570,7 +1570,8 @@ MonoBehaviour:
       soundEffect: {fileID: 8300000, guid: 76c129163afc957489bb0152891dfd95, type: 3}
     - sprite: {fileID: 1291748198613406465, guid: c8d29ba3d927dfb46bf113bfcfb38621, type: 3}
       name: Son
-      dialogue: '"What''s this? The power and treasure... half to the servant? Unacceptable."'
+      dialogue: '"What''s this? The power and treasure... half to the servant? It
+        is what my mother left to me! Unacceptable."'
       soundEffect: {fileID: 0}
     - sprite: {fileID: 1291748198613406465, guid: c8d29ba3d927dfb46bf113bfcfb38621, type: 3}
       name: Son
