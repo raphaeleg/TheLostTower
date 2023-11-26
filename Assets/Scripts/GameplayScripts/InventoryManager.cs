@@ -15,6 +15,7 @@ public class InventoryManager : MonoBehaviour
 
     public GameObject toReference;
     public UnityEvent toDo;
+    public Canvas draggingOn;
 
     private void Awake()
     {
@@ -62,6 +63,7 @@ public class InventoryManager : MonoBehaviour
             if (iic == null) { continue; }
             iic.ToSlotIn = toReference;
             iic.interactAction = toDo;
+            iic.canvas = draggingOn;
         }
     }
 

@@ -12,6 +12,7 @@ public class PlaySound : MonoBehaviour
 
     public void toPlayMaster(AudioClip _clip)
     {
+        SoundManager.Instance.StopBGM();
         SoundManager.Instance.SetBGM(_clip);
         SoundManager.Instance.PlayBGM();
     }

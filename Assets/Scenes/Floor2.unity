@@ -172,7 +172,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 10
+    m_Left: 40
     m_Right: 0
     m_Top: 0
     m_Bottom: 0
@@ -771,6 +771,7 @@ MonoBehaviour:
   toDo:
     m_PersistentCalls:
       m_Calls: []
+  draggingOn: {fileID: 0}
 --- !u!4 &424592563
 Transform:
   m_ObjectHideFlags: 0
@@ -2333,7 +2334,7 @@ PrefabInstance:
     - target: {fileID: 8738597066164925682, guid: 1ac1bb05fbfebe845bade8ad0ef8f57b, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 731806605160617493, guid: 904e1b9567dede94c858639dc0362e5e, type: 3}
+      objectReference: {fileID: 761100573506273824, guid: 675181b694bdc0e4da14e8bed012fbec, type: 3}
     - target: {fileID: 8738597066164925682, guid: 1ac1bb05fbfebe845bade8ad0ef8f57b, type: 3}
       propertyPath: m_PreserveAspect
       value: 1
@@ -2906,7 +2907,7 @@ PrefabInstance:
     - target: {fileID: 8738597066164925682, guid: 1ac1bb05fbfebe845bade8ad0ef8f57b, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 731806605160617493, guid: 904e1b9567dede94c858639dc0362e5e, type: 3}
+      objectReference: {fileID: 5652629269804982215, guid: 26339b430af76e741b1d5c96f9933b97, type: 3}
     - target: {fileID: 8738597066164925682, guid: 1ac1bb05fbfebe845bade8ad0ef8f57b, type: 3}
       propertyPath: m_PreserveAspect
       value: 1

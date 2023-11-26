@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: EmptyBottle
   m_EditorClassIdentifier: 
   itemName: Empty Bottle
-  icon: {fileID: 731806605160617493, guid: 904e1b9567dede94c858639dc0362e5e, type: 3}
+  icon: {fileID: 5652629269804982215, guid: 26339b430af76e741b1d5c96f9933b97, type: 3}
   itemDesc: Empty poison bottle. You keep this as a memento of Revenge.

@@ -54,8 +54,12 @@ MonoBehaviour:
     - sprite: {fileID: 0}
       name: 
       dialogue: 
+      soundEffect: {fileID: 0}
   afterDialogueChoice: {fileID: 0}
   afterDialogueChangeSceneTo: 
+  afterDialogueFunction:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &9212557071121386656
 GameObject:
   m_ObjectHideFlags: 0
@@ -95,7 +99,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 50, y: 50}
+  m_SizeDelta: {x: 140, y: 140}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4358150167121823839
 CanvasRenderer:
@@ -204,6 +208,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 0}
+  ToSlotIn: {fileID: 0}
+  interactAction:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!225 &-8829237915796755829
 CanvasGroup:
   m_ObjectHideFlags: 0

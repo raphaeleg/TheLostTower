@@ -7,7 +7,7 @@ using UnityEngine.EventSystems;
 
 public class InventoryItemController : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler
 {
-    [SerializeField] private Canvas canvas;
+    [SerializeField] public Canvas canvas;
     private RectTransform rectTransform;
     private CanvasGroup canvasGroup;
     private Vector2 ogPosition;

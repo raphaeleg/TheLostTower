@@ -18,7 +18,8 @@ public class EndingController : MonoBehaviour
     {
         float t = 230 / 255;
         float currAlpha = 230/255;
-        bool finScream = false;
+        bool finScream = false; 
+        SoundManager.Instance.PlaySound(scream);
 
         //SoundManager.Instance.PlaySound(scream);
     }

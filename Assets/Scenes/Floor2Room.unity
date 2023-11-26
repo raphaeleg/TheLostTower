@@ -1070,7 +1070,7 @@ PrefabInstance:
     - target: {fileID: 6399115086610596230, guid: e46ec3a5e0ab5344e893b03b3dec3c3f, type: 3}
       propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 604471783}
+      objectReference: {fileID: 604471785}
     - target: {fileID: 6399115086610596230, guid: e46ec3a5e0ab5344e893b03b3dec3c3f, type: 3}
       propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -3278,7 +3278,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 10
+    m_Left: 40
     m_Right: 0
     m_Top: 0
     m_Bottom: 0
@@ -3379,6 +3379,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  draggingOn: {fileID: 1923256740}
 --- !u!4 &1308401889
 Transform:
   m_ObjectHideFlags: 0
@@ -4236,7 +4237,7 @@ PrefabInstance:
     - target: {fileID: 8738597066164925682, guid: 1ac1bb05fbfebe845bade8ad0ef8f57b, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 731806605160617493, guid: 904e1b9567dede94c858639dc0362e5e, type: 3}
+      objectReference: {fileID: 761100573506273824, guid: 675181b694bdc0e4da14e8bed012fbec, type: 3}
     - target: {fileID: 8738597066164925682, guid: 1ac1bb05fbfebe845bade8ad0ef8f57b, type: 3}
       propertyPath: m_PreserveAspect
       value: 1
@@ -5188,7 +5189,7 @@ PrefabInstance:
     - target: {fileID: 8738597066164925682, guid: 1ac1bb05fbfebe845bade8ad0ef8f57b, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 731806605160617493, guid: 904e1b9567dede94c858639dc0362e5e, type: 3}
+      objectReference: {fileID: 5652629269804982215, guid: 26339b430af76e741b1d5c96f9933b97, type: 3}
     - target: {fileID: 8738597066164925682, guid: 1ac1bb05fbfebe845bade8ad0ef8f57b, type: 3}
       propertyPath: m_PreserveAspect
       value: 1

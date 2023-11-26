@@ -592,7 +592,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd2dd3bb7cbd3194daae47d691978696, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scream: {fileID: 8300000, guid: 0cc4f6295c29d5641a062369739f369e, type: 3}
+  scream: {fileID: 8300000, guid: c3ecebec0d0358c419ece18abb5ec279, type: 3}
   blackScreen: {fileID: 1595440575}
   credits: {fileID: 675403190}
 --- !u!1 &788935982

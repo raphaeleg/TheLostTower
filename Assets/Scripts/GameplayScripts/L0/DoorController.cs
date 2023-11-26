@@ -7,7 +7,6 @@ public class DoorController : MonoBehaviour
 {
     private InventoryManager im;
     public bool isLocked = true;
-
     public void OpenDoor()
     {
         im = FindObjectOfType<InventoryManager>();

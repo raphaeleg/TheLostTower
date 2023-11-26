@@ -5,7 +5,7 @@ using UnityEngine;
 public class SoundManager : MonoBehaviour
 {
     public static SoundManager Instance;
-    [SerializeField] private AudioSource _musicSource, _effectsSource;
+    public AudioSource _musicSource, _effectsSource;
 
     void Awake()
     {
@@ -32,6 +32,7 @@ public class SoundManager : MonoBehaviour
 
     public void PlayBGM()
     {
+        _musicSource.loop = true;
         _musicSource.Play();
     }
 

@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Knife
   m_EditorClassIdentifier: 
   itemName: Knife
-  icon: {fileID: 731806605160617493, guid: 904e1b9567dede94c858639dc0362e5e, type: 3}
+  icon: {fileID: 761100573506273824, guid: 675181b694bdc0e4da14e8bed012fbec, type: 3}
   itemDesc: A sharp and ominous knife. You keep this as a memento of Revenge.
