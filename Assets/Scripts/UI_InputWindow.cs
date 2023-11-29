@@ -13,6 +13,7 @@ public class UI_InputWindow : MonoBehaviour
     public TMP_Text titleText;
     public TMP_InputField inputField;
     public AudioClip successAudio;
+    private int LIMITED_INPUT_LENGTH = 4;
 
 private void Awake()
     {
@@ -25,12 +26,11 @@ private void Awake()
         titleText.text = titleString;
         inputField.onValidateInput = (string text, int charIndex, char addedChar) =>
         {
-            return ValidateChar(validCharacters, addedChar);
+            return ValidateChar(validCharacters, addedChar, text);
         };
         inputField.text = inputString;
 
         okBtn.onClick.AddListener(() => {
-            Debug.Log(code+" "+inputField.text);
             if (inputField.text == code) {
                 okAction.Invoke();
                 if (successAudio != null)
@@ -51,9 +51,9 @@ private void Awake()
         gameObject.SetActive(false);
     }
 
-    private char ValidateChar(string validCharacters, char addedChar)
+    private char ValidateChar(string validCharacters, char addedChar, string inputString)
     {
-        if (validCharacters.IndexOf(addedChar) != -1)
+        if (validCharacters.IndexOf(addedChar) != -1 && inputString.Length < LIMITED_INPUT_LENGTH)
         {
             return addedChar;
         }
