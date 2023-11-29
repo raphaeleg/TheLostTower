@@ -13,7 +13,7 @@ public class DialogueTrigger : MonoBehaviour
 
     public void Awake()
     {
-        dm = FindObjectOfType<DialogueManager>();
+        dm = FindFirstObjectByType<DialogueManager>();
         if (!isTriggerable)
         {
             gameObject.SetActive(false);
