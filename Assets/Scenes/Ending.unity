@@ -269,6 +269,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 379296298}
   m_CullTransparentMesh: 1
+--- !u!1001 &622529369
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2391255668986871868, guid: ceed716d78f3c3141a38d31fcdb7b0b9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2391255668986871868, guid: ceed716d78f3c3141a38d31fcdb7b0b9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2391255668986871868, guid: ceed716d78f3c3141a38d31fcdb7b0b9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2391255668986871868, guid: ceed716d78f3c3141a38d31fcdb7b0b9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2391255668986871868, guid: ceed716d78f3c3141a38d31fcdb7b0b9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2391255668986871868, guid: ceed716d78f3c3141a38d31fcdb7b0b9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2391255668986871868, guid: ceed716d78f3c3141a38d31fcdb7b0b9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2391255668986871868, guid: ceed716d78f3c3141a38d31fcdb7b0b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2391255668986871868, guid: ceed716d78f3c3141a38d31fcdb7b0b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2391255668986871868, guid: ceed716d78f3c3141a38d31fcdb7b0b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777877336241352636, guid: ceed716d78f3c3141a38d31fcdb7b0b9, type: 3}
+      propertyPath: m_Name
+      value: LevelLoader
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ceed716d78f3c3141a38d31fcdb7b0b9, type: 3}
 --- !u!1 &675403188
 GameObject:
   m_ObjectHideFlags: 0
@@ -649,7 +706,6 @@ MonoBehaviour:
       dialogue: '"Is this some kind of joke? I won''t accept this!"'
       soundEffect: {fileID: 0}
   afterDialogueChoice: {fileID: 0}
-  afterDialogueChangeSceneTo: 
   afterDialogueFunction:
     m_PersistentCalls:
       m_Calls:
@@ -1262,9 +1318,10 @@ CanvasRenderer:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 622529369}
   - {fileID: 1575715770}
+  - {fileID: 1477813483}
   - {fileID: 1366556421}
   - {fileID: 1012376736}
-  - {fileID: 1477813483}
   - {fileID: 788935984}
   - {fileID: 728718108}
