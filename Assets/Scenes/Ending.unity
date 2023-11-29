@@ -383,9 +383,20 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Thank you for Playing! \n\nThis game was made with love by\n\nZihan Wang
-    (Liz) - Game Designer\nBaoliri (Lily) - 2D Artist\nRaphaele Guillemot - Game
-    Programmer"
+  m_text: 'Game Designer - Zihan Wang (Liz)
+
+    2D Artist - Baoliri (Lily)
+
+    Software
+    Developer - Raphaele Guillemot
+
+    Narrative Designer - Zihan Wang (Liz)
+
+    Sound
+    Designer - Zihan Wang (Liz)
+
+
+    Thank you for Playing! '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 015e5b0e17900c74a816fa7247386d15, type: 2}
   m_sharedMaterial: {fileID: 645298473962615517, guid: 015e5b0e17900c74a816fa7247386d15, type: 2}
